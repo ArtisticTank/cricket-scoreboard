@@ -6,17 +6,18 @@ public class Player {
     private int sixes;
     private int fours;
     private int dots;
-
     private String name;
     private int totalRuns;
-
-
     public Player(String name) {
         runs = new ArrayList<>();
         this.name = name;
         totalRuns = 0;
     }
 
+    /**
+     * Score run for player
+     * @param run
+     */
     public void scoreRun(String run) {
         runs.add(run);
         if (run.equals("W")) {
@@ -31,7 +32,6 @@ public class Player {
             dots++;
 
         totalRuns += runInt;
-
     }
 
     public List<String> getRuns() {
