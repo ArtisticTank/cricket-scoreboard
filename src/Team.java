@@ -52,6 +52,7 @@ public class Team {
 
     /**
      * Adding score the team
+     *
      * @param run
      * @throws InningsOverException
      */
@@ -93,6 +94,7 @@ public class Team {
 
     /**
      * Check if the team is all out
+     *
      * @throws InningsOverException
      */
     private void checkInningsEndForWicket() throws InningsOverException {
@@ -105,6 +107,7 @@ public class Team {
 
     /**
      * check if the overs have been completed
+     *
      * @throws InningsOverException
      */
     private void checkInningsEndForOver() throws InningsOverException {

@@ -33,6 +33,7 @@ public class Cricket {
 
     /**
      * Get the team player input from console
+     *
      * @param sc
      * @param noOfPlayers
      * @param noOfOvers
@@ -60,6 +61,7 @@ public class Cricket {
 
     /**
      * Get the scores from the console.
+     *
      * @param sc
      * @param noOfOvers
      * @param t1
@@ -90,17 +92,18 @@ public class Cricket {
 
             }
             currentTeam.printScoreCard();
-            if(endFlag)
+            if (endFlag)
                 break;
         }
 
-        if(isSecondInnings)
+        if (isSecondInnings)
             printResult(t1, t2);
 
     }
 
     /**
      * Print the result on the console
+     *
      * @param t1
      * @param t2
      */
@@ -116,6 +119,7 @@ public class Cricket {
 
     /**
      * Check if the target is reached
+     *
      * @param t1
      * @param t2
      * @return

@@ -8,6 +8,7 @@ public class Player {
     private int dots;
     private String name;
     private int totalRuns;
+
     public Player(String name) {
         runs = new ArrayList<>();
         this.name = name;
@@ -16,12 +17,13 @@ public class Player {
 
     /**
      * Score run for player
+     *
      * @param run
      */
     public void scoreRun(String run) {
         runs.add(run);
         if (run.equals("W")) {
-           return;
+            return;
         }
         int runInt = Integer.parseInt(run);
         if (runInt == 6)
